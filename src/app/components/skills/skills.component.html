@@ -1,16 +1,23 @@
 <section>
-     <h2>My skills</h2>
-    <div appAppearAnimation delay="200">
-        <h3>Hard Skills</h3>
-        <ul>
-            <li appAppearAnimation delay="{{(i * 2) + '00'}}"
-            *ngFor="let hardSkill of listHardSkills
-            let i = index"
-            >{{hardSkill}}</li>
-        </ul>
+    <h2>My skills</h2>
+    <div class="wrapper-skills">
+        <div appAppearAnimation>
+            <h3>Hard Skills</h3>
+            <ul>
+                <li appAppearAnimation delay="{{i + '00'}}" *ngFor="let hardSkill of listHardSkills
+                let i = index">{{hardSkill}}</li>
+            </ul>
+        </div>
     </div>
-    <div>
-        <h3>Soft Skills</h3>
 
+    <div class="wrapper-skills">
+        <div appAppearAnimation>
+            <h3>Soft Skills</h3>
+            <ul>
+                <li appAppearAnimation delay="{{i + '00'}}" *ngFor="let softSkill of listSoftSkills
+                let i = index">{{softSkill}}</li>
+            </ul>
+        </div>
     </div>
+
 </section>

@@ -36,9 +36,11 @@ export class AppearanceAnimationDirective {
     this.observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          console.log('Element is in the viewport');
+          // console.log('Element is in the viewport');
           this.makeAnimation()
-        } else { }
+        } else {
+          
+         }
       });
     }, {
       rootMargin: '0px',
@@ -55,7 +57,7 @@ export class AppearanceAnimationDirective {
       const element = this.elementRef.nativeElement
       const player: AnimationPlayer = animation.create(element);
       player.play();
-      console.log(new Date().getSeconds(), new Date().getMilliseconds())
+      // console.log(new Date().getSeconds(), new Date().getMilliseconds())
     }, + this.delay)
   }
 

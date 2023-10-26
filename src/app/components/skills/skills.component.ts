@@ -9,21 +9,20 @@ import { ListsOfSkillsService } from './lists-of-skills.service';
 export class SkillsComponent implements OnInit {
 
   public listHardSkills!: string[]
+  public listSoftSkills!: string[]
   public result: string[] = []
 
   constructor(
     public list: ListsOfSkillsService
     ) {
-    this.listHardSkills = list.hardSkill
-  }
+      this.listHardSkills = list.hardSkills
+      this.listSoftSkills = list.softSkills
+    }
 
   ngOnInit(): void {
-    console.log(this.result)
   }
 
   ngAfterContentInit(){
-    console.log(this.result)
-    
   }
 
   public defineAnimationDelay(i: number): string {

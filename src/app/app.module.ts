@@ -7,6 +7,11 @@ import { WelcomePartComponent } from './components/welcome-part/welcome-part.com
 import { SkillsComponent } from './components/skills/skills.component';
 import { AppearanceAnimationDirective } from './directives/appear-animation.directive';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
+import { RouterModule } from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -15,11 +20,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FooterComponent,
     WelcomePartComponent,
     SkillsComponent,
+    PortfolioComponent,
+    AboutMeComponent,
+    ContactsComponent,
   ],
   imports: [
     BrowserModule,
     AppearanceAnimationDirective,
-    BrowserAnimationsModule 
+    BrowserAnimationsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

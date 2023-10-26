@@ -2,6 +2,34 @@
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    --color-card: #eeeeee;
     overflow-x: hidden;
+    cursor: default;
+    scroll-behavior: smooth;
+}
+
+/* Variables */
+body {
+    --color-card: #eeeeee;
+    --header-height: 10vh;
+/* Titles */
+    /* --title-1: 48px; */
+    /* --title-2: 36px; */
+    /* --title-3: 24px */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
 }

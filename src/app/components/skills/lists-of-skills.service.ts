@@ -5,43 +5,29 @@ import { Injectable } from '@angular/core';
 })
 export class ListsOfSkillsService {
 
-  public hardSkill: string[] = [
-    'Angular Framework Knowledge',
-
+  public hardSkills: string[] = [
+    'Comprehending Angular Architecture',
     'HTTP and RESTful API Interaction',
-
     'Angular Routing',
-
     'Forms and Validation',
-
     'RxJS (Reactive Extensions for JavaScript)',
-
     'GIT',
-
     'Understanding Dependency Injection',
-
     // 'Understanding MVC',
-    // https://medium.com/@captofbottles/%D0%B0%D0%BD%D0%B3%D1%83%D0%BB%D1%8F%D1%80-2-%D1%8D%D1%82%D0%BE-mvx-7caf8e7965aa
+    'Basic understanding OOP',
+    'Basic understanding SOLID',
+    'Localization and Internationalization Support (i18n)',
+    'Practice of Bootstrap'
+  ]
+  public softSkills: string[] = [
+    'English Intermediate (B1)',
+    'Although it\'s hard, I want to improve and optimize my code',
+    'Looking for a team for the long term',
+    'I strive to create an atmosphere of trust and support in the team',
+    'Able to take responsibility for own work and perform it on time',
+    'Have the ability to take constructive critical feedback and use it to improve',
+    'I like to program 😊'
 
-    'OOP'
-    /* Object-oriented programming
-    Інкапсуляція (Encapsulation) - у ООП клас є своєрідними "капсулами" для об'єктів. 
-      Скривання - якісь процеси у середені класу, що є private.
-
-    Наслідування (Іnheritance) - Можливість створювати нові класи на освнові інших.
-
-    Поліморфізм (Polymorphism багато форм) - 
-      Параметричний (істиний Parametric ) - 
-
-      Ad-hoc (Мнимий) -
-    */
-
-    // 'Invertion of Control (IoC)'
-    /* 
-      IoC (Inversion of Control) Container - це контейнер, який використовується в об'єктно-орієнтованому програмуванні для управління створенням та керуванням об'єктами. 
-      Основна ідея полягає в тому, що IoC Container відповідає за створення об'єктів і внедрення їхніх залежностей, а не класи, які викликають ці об'єкти. 
-      Це дозволяє забезпечити більшу гнучкість і обертаність в програмному коді.
-    */ 
   ]
   constructor() { }
 }

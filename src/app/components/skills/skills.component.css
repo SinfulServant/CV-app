@@ -1,25 +1,36 @@
 section {
     height: 100vh;
     display: flex;
-    /* align-items: center; */
-    /* justify-content: space-evenly; */
     flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 h2 {
     flex-basis: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-section > div {
-    flex-basis: 50%;
-    height: 60%;
-    width: 30%;
-    background-color: var(--color-card);
+    height: var(--header-height);
 }
 
 h3 {
-    text-align: center;
+    padding-top: 10px;
+}
+
+.wrapper-skills {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section > div > div {
+    height: 100%;
+    width: 400px;
+    background-color: var(--color-card);
+}
+
+li {
+    padding: 8px 0;
+}
+
+li:last-child {
+    padding-bottom: 10px;
 }
