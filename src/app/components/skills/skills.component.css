@@ -1,8 +1,9 @@
 section {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
+    justify-content: center;
+    align-content: center;
 }
 
 h2 {
@@ -19,12 +20,18 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 0;
 }
 
-section > div > div {
+section>div>div {
     height: 100%;
     width: 400px;
-    background-color: var(--color-card);
+    background-color: var(--color-card-5);
+    padding-right: 10px;
+}
+
+section>div:last-child>div {
+    background-color: var(--color-card-6);
 }
 
 li {
@@ -33,4 +40,15 @@ li {
 
 li:last-child {
     padding-bottom: 10px;
+}
+
+@media screen and (max-width: 500px) {
+
+    section {
+        padding-top: 20px;
+    }
+
+    section>div>div {
+        width: 320px;
+    }
 }

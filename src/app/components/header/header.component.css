@@ -21,7 +21,12 @@ a:hover {
     background-color: #eaeaea;
 }
 
-/* 
-a:first-child {
-    margin-right: auto;
-} */
+@media screen and (max-width: 768px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    a {
+        font-size: small;
+    }
+}

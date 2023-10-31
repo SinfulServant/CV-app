@@ -36,15 +36,12 @@ export class AppearanceAnimationDirective {
     this.observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          // console.log('Element is in the viewport');
           this.makeAnimation()
-        } else {
-          
-         }
+        } else {}
       });
     }, {
       rootMargin: '0px',
-      threshold: [0]
+      threshold: [0.15]
     });
     this.observer.observe(this.target);
   }
@@ -52,12 +49,11 @@ export class AppearanceAnimationDirective {
   private makeAnimation(): void {
     setTimeout(() => {
       const animation = this._builder.build([
-        animate('500ms', style(this.defineKindOfAnimation())),
+        animate('300ms', style(this.defineKindOfAnimation())),
       ]);
       const element = this.elementRef.nativeElement
       const player: AnimationPlayer = animation.create(element);
       player.play();
-      // console.log(new Date().getSeconds(), new Date().getMilliseconds())
     }, + this.delay)
   }
 

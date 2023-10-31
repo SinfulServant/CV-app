@@ -9,12 +9,19 @@ body {
 
 /* Variables */
 body {
-    --color-card: #eeeeee;
     --header-height: 10vh;
 /* Titles */
     /* --title-1: 48px; */
     /* --title-2: 36px; */
     /* --title-3: 24px */
+
+    /* Color cards */
+    --color-card-1: #eeeeee;
+    --color-card-2: #ffe5e9;
+    --color-card-3: #def0ff;
+    --color-card-4: #fdfae1;
+    --color-card-5: #fbeeff;
+    --color-card-6: #f1fbfd;
 }
 
 h1, h2, h3, h4, h5, h6 {

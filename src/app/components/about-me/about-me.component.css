@@ -1,0 +1,29 @@
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.wrapper > div {
+    background-color: var(--color-card-6);
+    padding: 10px;
+    width: 300px;
+    border: 10px solid white;
+}
+
+.wrapper > div:first-child {
+    background-color: var(--color-card-2);
+}
+
+.wrapper > div:last-child {
+    background-color: var(--color-card-5);
+}

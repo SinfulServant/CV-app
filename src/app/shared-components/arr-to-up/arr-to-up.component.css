@@ -1,0 +1,23 @@
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    background-color: rgb(52, 92, 148);
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    user-select: none;
+}
+
+.background:hover {
+    background-color: rgb(83, 129, 193);
+}
+
+.arrow-up {
+    color: rgb(250, 250, 250);
+    font-size: x-large;
+    transform: scaleX(1.7);
+}

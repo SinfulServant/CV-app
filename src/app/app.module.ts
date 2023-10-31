@@ -11,6 +11,10 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { RouterModule } from '@angular/router';
+import { ButtonComponent } from './shared-components/button/button.component';
+import { ArrToUpComponent } from './shared-components/arr-to-up/arr-to-up.component';
+import { HttpClientModule } from '@angular/common/http';
+import { GetUrlsService } from './services/get-urls.service';
 
 
 @NgModule({
@@ -23,14 +27,17 @@ import { RouterModule } from '@angular/router';
     PortfolioComponent,
     AboutMeComponent,
     ContactsComponent,
+    ButtonComponent,
+    ArrToUpComponent,
   ],
   imports: [
     BrowserModule,
     AppearanceAnimationDirective,
     BrowserAnimationsModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [GetUrlsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

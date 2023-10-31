@@ -2,9 +2,32 @@
     <h2>Portfolio</h2>
     <div class="wrapper">
         <div class="portfolip-area">
-            <div appAppearAnimation class="cheng" side="left">cheng</div>
-            <div appAppearAnimation delay="100" class="resume" side="right">resume</div>
-            <div appAppearAnimation delay="200" class="currency-exchange" side="right">currency-exchange</div>
+            <div appAppearAnimation class="cheng" side="left">
+                <h3>ChEng Island</h3>
+                <p>Site learning English and Chinese, which was developed by a small team on freelance. Written with Angular and Nest. I independently made the entire frontend part of the application.</p>
+                <p>The application has about 10 pages, two languages, forms and validation, some auxiliary libraries. There is an admin panel where you can add and change the content of the page in real time.</p>
+                <p>In this project, I gained a lot of experience in using various Angular entities, tried to optimize code and architecture. I also interacted with the server a lot, used Swagger.</p>
+                <div class="btn-group">
+                    <app-button [url]="urls.cheng">Link to the site</app-button>
+                    <app-button [url]='urls.chengCode'>Application Code</app-button>
+                </div>
+            </div>
+            <div appAppearAnimation delay="100" class="resume" side="right">
+                <h3>CV App</h3>
+                <div class="btn-group">
+                    <app-button [url]="urls.resume">Link to the site</app-button>
+                    <app-button [url]='urls.resumeCode'>Application Code</app-button>
+                </div>
+            </div>
+            <div appAppearAnimation delay="200" class="currency-exchange" side="right">
+                <h3>Currency Exchange</h3>
+                <p>Application for tracking the exchange rate.</p>
+                <p>The application receives data on exchange rates from the API of the national bank of Ukraine. Ability to compare rates of different currencies and determine their ratio to each other.</p>
+                <div class="btn-group">
+                    <app-button [url]="urls.currencyExchange">Link to the site</app-button>
+                    <app-button [url]='urls.currencyExchangeCode'>Application Code</app-button>
+                </div>
+            </div>
         </div>
     </div>
 </section>

@@ -1,0 +1,64 @@
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section > div {
+    padding-top: 30px;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+}
+
+i {
+    justify-content: center;
+    font-size: 48px;
+    width: 125px;
+    display: flex;
+    height: 125px;
+    align-items: center;
+    background: var(--color-card-1);
+    border-radius: 10px;
+}
+
+.icon-instagram {
+    color: rgb(245, 87, 179)
+}
+
+.icon-telegram {
+    color: rgb(86, 168, 255)
+}
+
+.icon-gitlab {
+    color: rgb(225, 156, 92)
+}
+
+.icon-linkedin-circled {
+    color: rgb(87, 75, 250)
+}
+
+.icon-instagram ,
+.icon-github-circled ,
+.icon-telegram ,
+.icon-gitlab ,
+.icon-linkedin-circled {
+    transition: all 100ms;
+}
+
+
+.icon-instagram:hover ,
+.icon-github-circled:hover ,
+.icon-telegram:hover ,
+.icon-gitlab:hover ,
+.icon-linkedin-circled:hover {
+    font-size: 56px;
+}
+
+
