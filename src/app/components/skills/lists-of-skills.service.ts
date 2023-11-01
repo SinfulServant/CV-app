@@ -1,22 +1,18 @@
 import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class ListsOfSkillsService {
 
   public hardSkills: string[] = [
-    'Comprehending Angular Architecture',
+    'Basic understanding of Angliar structure',
     'HTTP and RESTful API Interaction',
     'Angular Routing',
     'Forms and Validation',
     'RxJS (Reactive Extensions for JavaScript)',
     'GIT',
-    'Understanding Dependency Injection',
     // 'Understanding MVC',
-    'Basic understanding OOP',
-    'Basic understanding SOLID',
-    'Localization and Internationalization Support (i18n)',
+    'Basic understanding OOP, SOLID, DI',
+    'Practice of localization (i18n)',
     'Practice of Bootstrap'
   ]
   public softSkills: string[] = [

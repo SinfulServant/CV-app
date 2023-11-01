@@ -6,6 +6,11 @@ section {
     flex-direction: column;
 }
 
+h2 {
+    height: 20%;
+}
+
+
 section > div {
     padding-top: 30px;
     max-width: 600px;
@@ -37,7 +42,7 @@ i {
 }
 
 .icon-gitlab {
-    color: rgb(225, 156, 92)
+    color: rgb(255, 157, 86)
 }
 
 .icon-linkedin-circled {

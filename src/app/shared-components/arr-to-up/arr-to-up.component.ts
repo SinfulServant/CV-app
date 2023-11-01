@@ -15,14 +15,18 @@ export class ArrToUpComponent {
     else this.isArrowToTop = false
   }
 
-  public toTop(): void {
-    let scrollToTop = window.setInterval(() => {
-      let pos = window.scrollY;
-      if (pos > 0) {
-          window.scrollTo(0, pos - 50); // how far to scroll on each step
-      } else {
-          window.clearInterval(scrollToTop);
-      }
-  }, 16);
+  public navigate(): void {
+    document.getElementById('home')?.scrollIntoView({behavior: 'smooth'})
   }
+
+  // public toTop(): void {
+  //   let scrollToTop = window.setInterval(() => {
+  //     let pos = window.scrollY;
+  //     if (pos > 0) {
+  //         window.scrollTo(0, pos - 50); // how far to scroll on each step
+  //     } else {
+  //         window.clearInterval(scrollToTop);
+  //     }
+  // }, 16);
+  // }
 }

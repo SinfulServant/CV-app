@@ -31,10 +31,10 @@ export class GetUrlsService {
         catchError(err => throwError(() => console.log(err)))
       )
       .subscribe(
-        (urls: Urls) => this.urls.next(urls)
+        (urls: Urls) => {
+          this.urls.next(urls)
+          console.log(this.urls.value)
+        }
       )
   }
-  
-
-
 }

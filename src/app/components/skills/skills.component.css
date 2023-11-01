@@ -9,6 +9,9 @@ section {
 h2 {
     flex-basis: 100%;
     height: var(--header-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h3 {
@@ -32,6 +35,13 @@ section>div>div {
 
 section>div:last-child>div {
     background-color: var(--color-card-6);
+}
+
+ul {
+    height: 82%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 li {

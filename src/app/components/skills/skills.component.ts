@@ -4,7 +4,8 @@ import { ListsOfSkillsService } from './lists-of-skills.service';
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.css']
+  styleUrls: ['./skills.component.css'],
+  providers: [ListsOfSkillsService]
 })
 export class SkillsComponent implements OnInit {
 

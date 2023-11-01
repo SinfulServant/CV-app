@@ -5,6 +5,15 @@ section {
     justify-content: center;
 }
 
+p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+p::first-letter {
+    padding-left: 25px;
+}
+
 .wrapper {
     padding-top: 20px;
     display: flex;
@@ -14,6 +23,9 @@ section {
 }
 
 .wrapper > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--color-card-6);
     padding: 10px;
     width: 300px;
